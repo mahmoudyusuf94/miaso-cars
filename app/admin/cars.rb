@@ -16,5 +16,12 @@ permit_params :brand, :model, :plate_no, :assigned
 		column :model
 		column :plate_no
 		column :assigned
+		actions
 	end
+
+
+	filter :brand, as: :select
+	filter :model, as: :select
+	filter :assigned, as: :select
+	filter :plate_no, as: :select
 end

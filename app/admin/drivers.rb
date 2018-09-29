@@ -15,5 +15,9 @@ permit_params :name, :grade, :car
 		column :name
 		column :grade
 		column :car
+		actions
 	end
+
+	filter :car, as: :select 
+	filter :grade, as: :select
 end

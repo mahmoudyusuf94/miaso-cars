@@ -18,6 +18,11 @@ permit_params :car, :type, :date, :place, :who , :notes
 		column :place
 		column :who
 		column :notes
+		actions
 	end
+
+	filter :car, as: :select
+	filter :date, as: :date_range
+	filter :who, as: :select
 
 end

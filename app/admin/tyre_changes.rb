@@ -15,5 +15,9 @@ permit_params :car, :date, :type, :num
 		column :date
 		column :type
 		column :num
+		actions
 	end
+
+	filter :car, as: :select
+	filter :date, as: :date_range
 end

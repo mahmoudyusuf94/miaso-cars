@@ -16,5 +16,10 @@ permit_params :car, :date, :type, :waranty
 		column :date
 		column :type
 		column :waranty
+		actions
 	end
+
+	filter :car, as: :select
+	filter :waranty, as: :select
+	filter :date, as: :date_range
 end
