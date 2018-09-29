@@ -12,4 +12,10 @@ ActiveAdmin.register BatteryChange do
 #   permitted
 # end
 
+	index do
+		column :car 
+		column :date
+		column :type
+		column :waranty
+	end
 end

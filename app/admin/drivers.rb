@@ -11,5 +11,8 @@ ActiveAdmin.register Driver do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-
+	index do
+		column :name
+		column :grade
+	end
 end

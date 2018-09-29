@@ -11,5 +11,10 @@ ActiveAdmin.register Car do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-
+	index do 
+		column :brand
+		column :model
+		column :plate_no
+		column :assigned
+	end
 end

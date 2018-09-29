@@ -11,5 +11,10 @@ ActiveAdmin.register TyreChange do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-
+	index do
+		column :car 
+		column :date
+		column :type
+		column :num
+	end
 end
