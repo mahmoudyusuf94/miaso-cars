@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  car: one
+  type: 
+  date: 2018-09-29
+  place: MyString
+  who: MyString
+  notes: MyString
+
+two:
+  car: two
+  type: 
+  date: 2018-09-29
+  place: MyString
+  who: MyString
+  notes: MyString

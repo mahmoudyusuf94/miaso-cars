@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plate_no: MyString
+  brand: MyString
+  model: MyString
+  date_added: 2018-09-29
+  assigned: MyString
+
+two:
+  plate_no: MyString
+  brand: MyString
+  model: MyString
+  date_added: 2018-09-29
+  assigned: MyString

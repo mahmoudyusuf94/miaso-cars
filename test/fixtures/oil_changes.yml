@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  car: one
+  date: 2018-09-29
+  type: 
+  km: 1
+
+two:
+  car: two
+  date: 2018-09-29
+  type: 
+  km: 1
