@@ -2,7 +2,7 @@ ActiveAdmin.register Driver do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :name, :grade, :car
+permit_params :name, :grade, :car_id
 #
 # or
 #
