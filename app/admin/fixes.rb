@@ -2,7 +2,7 @@ ActiveAdmin.register Fix do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :car_id, :type, :date, :place, :who , :notes
+permit_params :car_id, :form, :date, :place, :who , :notes
 #
 # or
 #
@@ -13,7 +13,7 @@ permit_params :car_id, :type, :date, :place, :who , :notes
 # end
 	index do
 		column :car 
-		column :type
+		column :form
 		column :date
 		column :place
 		column :who

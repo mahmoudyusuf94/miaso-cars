@@ -2,7 +2,7 @@ ActiveAdmin.register TyreChange do
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
-permit_params :car_id, :date, :type, :num
+permit_params :car_id, :date, :brand, :num
 # or
 #
 # permit_params do
@@ -13,7 +13,7 @@ permit_params :car_id, :date, :type, :num
 	index do
 		column :car 
 		column :date
-		column :type
+		column :brand
 		column :num
 		actions
 	end

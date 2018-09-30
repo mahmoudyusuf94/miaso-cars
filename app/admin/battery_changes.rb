@@ -14,7 +14,7 @@ permit_params :car_id, :date, :type, :waranty
 	index do
 		column :car 
 		column :date
-		column :type
+		column :brand
 		column :waranty
 		actions
 	end
