@@ -1,16 +1,12 @@
 ActiveAdmin.register Car do
-# See permitted parameters documentation:
-# https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-#
-permit_params :brand, :model, :plate_no, :assigned
 
-# or
-#
-# permit_params do
-#   permitted = [:permitted, :attributes]
-#   permitted << :other if params[:action] == 'create' && current_user.admin?
-#   permitted
-# end
+	permit_params :brand, :model, :plate_no, :assigned
+
+	filter :brand, as: :select
+	filter :model, as: :select
+	filter :assigned, as: :select
+	filter :plate_no, as: :select
+
 	index do 
 		column :brand
 		column :model
@@ -19,9 +15,24 @@ permit_params :brand, :model, :plate_no, :assigned
 		actions
 	end
 
+	show do
+    attributes_table do
+      row :brand
+      row :model
+      row :plate_no
+      row :assigned
+    end
 
-	filter :brand, as: :select
-	filter :model, as: :select
-	filter :assigned, as: :select
-	filter :plate_no, as: :select
+    panel 'Drivers' do
+      drivers = resource.drivers
+      table_for drivers do
+        column :name do |driver|
+					link_to driver.name, admin_driver_path(driver)
+        end
+        column :grade
+      end
+    end
+  end
+
+
 end
