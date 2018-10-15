@@ -1,5 +1,5 @@
 ActiveAdmin.register Car do
-
+  menu priority: 1
 	permit_params :brand, :model, :plate_no, :assigned
 
 	filter :brand, as: :select
@@ -33,6 +33,4 @@ ActiveAdmin.register Car do
       end
     end
   end
-
-
 end
