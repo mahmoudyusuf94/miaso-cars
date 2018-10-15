@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_29_120057) do
+ActiveRecord::Schema.define(version: 2018_09_30_081630) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 2018_09_29_120057) do
   create_table "battery_changes", force: :cascade do |t|
     t.integer "car_id"
     t.date "date"
-    t.string "type"
+    t.string "brand"
     t.integer "waranty"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(version: 2018_09_29_120057) do
 
   create_table "fixes", force: :cascade do |t|
     t.integer "car_id"
-    t.string "type"
+    t.string "form"
     t.date "date"
     t.string "place"
     t.string "who"
@@ -82,7 +82,7 @@ ActiveRecord::Schema.define(version: 2018_09_29_120057) do
   create_table "oil_changes", force: :cascade do |t|
     t.integer "car_id"
     t.date "date"
-    t.string "type"
+    t.string "brand"
     t.integer "km"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -92,7 +92,7 @@ ActiveRecord::Schema.define(version: 2018_09_29_120057) do
   create_table "tyre_changes", force: :cascade do |t|
     t.integer "car_id"
     t.date "date"
-    t.string "type"
+    t.string "brand"
     t.integer "num"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
