@@ -3,7 +3,7 @@ ActiveAdmin.register BatteryChange do
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
 menu priority: 4
-permit_params :car_id, :date, :type, :waranty
+permit_params :car_id, :date, :type, :waranty, :brand
 # or
 #
 # permit_params do
