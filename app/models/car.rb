@@ -6,6 +6,6 @@ class Car < ApplicationRecord
   has_many :tyre_changes
 
 	def to_s
-		"#{brand} #{model} -> #{plate_no} "
+		"#{brand} #{model} -> #{plate_no} -> #{assigned}"
 	end
 end
