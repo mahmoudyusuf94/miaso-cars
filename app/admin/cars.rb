@@ -33,17 +33,17 @@ ActiveAdmin.register Car do
       end
     end
 
-    panel 'Battery Changes' do
+    panel 'Battery Changesتغيير بطاريات' do
       battery_changes = resource.battery_changes.last
       table_for battery_changes do
         column :date
         column :brand
         column :waranty
       end
-      strong { link_to "Show all Battery Changes for this car", admin_car_battery_changes_path(resource) }
+      strong { link_to "عرض كل تغيير البطاريات لهذه السيارة", admin_car_battery_changes_path(resource) }
     end
 
-    panel 'Fixes' do
+    panel 'إصلاحات' do
       fixes = resource.fixes.last
       table_for fixes do
         column :form
@@ -52,27 +52,27 @@ ActiveAdmin.register Car do
         column :who
         column :notes
       end
-      strong { link_to "Show all Fixes for this car", admin_car_fixes_path(resource) }
+      strong { link_to "عرض كل الإصلاحات لهذه السيارة", admin_car_fixes_path(resource) }
     end
 
-    panel 'Oil Changes' do
+    panel 'تغيير زيت' do
       oil_changes = resource.oil_changes.last
       table_for oil_changes do
         column :date
         column :brand
         column :km
       end
-      strong { link_to "Show all Oil Changes for this car", admin_car_oil_changes_path(resource) }
+      strong { link_to "عرض كل تغييرات الزيت لهذه السيارة", admin_car_oil_changes_path(resource) }
     end
 
-    panel 'Tyre Changes' do
+    panel 'تغيير كاوتش' do
       tyre_changes = resource.tyre_changes.last
       table_for tyre_changes do
         column :date
         column :brand
         column :num
       end
-      strong { link_to "Show all Tyre Changes for this car", admin_car_tyre_changes_path(resource) }
+      strong { link_to "عرض كل تغييرات الكاوتش لهذه السيارة", admin_car_tyre_changes_path(resource) }
     end
   end
 end

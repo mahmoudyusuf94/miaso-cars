@@ -265,6 +265,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   duktape
+  i18n
   jbuilder (~> 2.5)
   puma (~> 3.11)
   rails (~> 5.2.1)
