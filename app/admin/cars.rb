@@ -33,14 +33,14 @@ ActiveAdmin.register Car do
       end
     end
 
-    panel 'Battery Changesتغيير بطاريات' do
+    panel 'تغيير بطاريات' do
       battery_changes = resource.battery_changes.last
       table_for battery_changes do
         column :date
         column :brand
         column :waranty
       end
-      strong { link_to "عرض كل تغيير البطاريات لهذه السيارة", admin_car_battery_changes_path(resource) }
+      strong { link_to "عرض كل تغييرات البطاريات لهذه السيارة", admin_car_battery_changes_path(resource) }
     end
 
     panel 'إصلاحات' do
